@@ -2,6 +2,126 @@ body {
   margin: 0;
   padding: 0;
 }
+#canvas-container {
+  width: 100%;
+  text-align: center;
+}
+#canvas-container canvas {
+  display: inline;
+}
+.sad-pineapple {
+  font-size: clamp(100px, 40vmin, 200px);
+  height: 1em;
+  margin: 0 auto;
+  width: 0.9em;
+  position: relative;
+}
+.sad-pineapple div {
+  position: absolute;
+}
+.sad-pineapple .leaf {
+  background-color: darkgreen;
+  border-radius: 90% 0 90% 0;
+  height: 20%;
+  top: 10%;
+  width: 20%;
+}
+.sad-pineapple .leaf.left {
+  transform: rotate(-100deg);
+  left: 50%;
+  transform-origin: bottom left;
+}
+.sad-pineapple .leaf.middle {
+  transform: translateY(30%) rotate(-60deg);
+  background-color: green;
+  left: 40%;
+  top: 5%;
+}
+.sad-pineapple .leaf.right {
+  transform: rotate(20deg);
+  left: 50%;
+  transform-origin: bottom left;
+}
+.sad-pineapple .shadow {
+  background-color: tan;
+  border-radius: 100%;
+  bottom: 5%;
+  height: 10%;
+  left: 28%;
+  opacity: 0.5;
+  width: 46%;
+}
+.sad-pineapple .body {
+  background-color: #ffa700;
+  border-radius: 40%;
+  height: 50%;
+  left: 24%;
+  top: 27%;
+  width: 54%;
+}
+.sad-pineapple .body .eye {
+  -webkit-animation: eye 1.04s infinite;
+  animation: eye 1.04s infinite;
+  background-color: black;
+  border-radius: 100%;
+  height: 15%;
+  top: 35%;
+  width: 15%;
+  z-index: 2;
+}
+.sad-pineapple .body .eye.left {
+  left: 25%;
+}
+.sad-pineapple .body .eye.right {
+  right: 25%;
+}
+.sad-pineapple .body .mouth {
+  background-color: black;
+  border-radius: 80% 80% 20% 20%;
+  height: 3%;
+  left: 41%;
+  top: 50%;
+  width: 18%;
+  z-index: 2;
+}
+.sad-pineapple .body .arm {
+  background-color: #ffa700;
+  border-radius: 100vw;
+  height: 50%;
+  top: -10px;
+  width: 20%;
+}
+.sad-pineapple .body .arm.left {
+  transform: rotate(-170deg);
+  left: 10%;
+  transform-origin: bottom left;
+}
+.sad-pineapple .body .arm.right {
+  transform: rotate(170deg);
+  right: 10%;
+  transform-origin: bottom right;
+}
+.sad-pineapple .body .leg {
+  background: #ffa700;
+  border-radius: 100vw;
+  bottom: -25%;
+  height: 40%;
+  width: 20%;
+}
+.sad-pineapple .body .leg.left {
+  left: 20%;
+}
+.sad-pineapple .body .leg.right {
+  right: 20%;
+}
+.sad-pineapple .body::after {
+  background: repeating-linear-gradient(-45deg, transparent, transparent 15%, darkorange 15%, darkorange 20%), repeating-linear-gradient(45deg, transparent, transparent 15%, darkorange 15%, darkorange 20%);
+  border-radius: 40%;
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
 .pineapple {
   font-size: clamp(100px, 40vmin, 200px);
   height: 1em;
