@@ -52,7 +52,7 @@ async function activateCamera() {
     "https://raw.githubusercontent.com/nenadmarkus/pico/c2e81f9d23cc11d1a612fd21e4f9de0921a5d0d9/rnt/cascades/facefinder"
   );
   do_puploc = await loadLocalizer(
-    "https://drone.nenadmarkus.com/data/blog-stuff/puploc.bin"
+    "lib/puploc.bin"
   );
 
   ctx = document.getElementsByTagName("canvas")[0].getContext("2d");
