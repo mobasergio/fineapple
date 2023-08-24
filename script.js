@@ -1,7 +1,5 @@
-// Cache the result of querySelector
 const resultElement = document.querySelector(".result");
 
-// Toggle classes using classList.toggle
 function happyPineapple() {
     document.querySelector(".result").classList.remove("sad-pineapple");
     document.querySelector(".result").classList.add("pineapple");
@@ -13,7 +11,6 @@ function happyPineapple() {
     document.querySelector(".result").classList.add("sad-pineapple");
   }
 
-// Use const and let instead of var
 let initialized = false;
 let lastSad = Date.now();
 let update_memory, facefinder_classify_region, do_puploc, ctx, processfn;
